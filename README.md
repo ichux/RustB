@@ -6,7 +6,7 @@ Just some Rust code demo using docker.
 
 # How to use
 ```bash
-docker run -it --rm --volume $(pwd):/src --volume $(pwd)/bash_profile:/.bash_profile rust bash 
+docker run -it --rm --volume "$(pwd):/src" --workdir /src --volume $(pwd)/bash_profile:/.bash_profile rust bash 
 cd /src
 ```
 
